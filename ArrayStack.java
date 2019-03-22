@@ -14,7 +14,7 @@ public class ArrayStack<T> implements Stack<T> {
 
     public void push(T item){ //pushes element onto the stack & returns the element
 
-        if (top == arr.length-1){
+        if (top == arr.length-1){ //if array is full, double the array size
             grow_array();
         }
         top++;
